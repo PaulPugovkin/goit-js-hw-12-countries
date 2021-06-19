@@ -1,27 +1,83 @@
-.example {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-    'Open Sans', 'Helvetica Neue', sans-serif;
-  line-height: 1.5;
-  background-color: #fff;
-  color: #424242;
-  max-width: 960px;
-  padding: 16px;
+body {
+  background-color: bisque;
 }
 
-.example code {
-  font-family: monospace;
-  font-size: 16px;
-  font-weight: 700;
-  background-color: #009688;
-  color: #fff;
-  padding: 2px 6px;
-  border-radius: 2px;
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-.example .background {
-  height: 240px;
-  // Путь к изображениям из SASS-файла всегда такой, как из папки css
-  background-image: url('../images/demo.jpg');
-  background-size: cover;
-  background-position: center;
+.form-country-input {
+  border: 1px solid #5f5f5f;
+  border-radius: 16px;
+  width: 250px;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.form-country-input:focus {
+  outline: none;
+}
+
+.country-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 20px;
+  margin: -10px;
+}
+
+.country-list-item {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.country-list-item-name {
+  margin-right: 10px;
+}
+
+.country-card {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  &-list {
+    font-size: 30px;
+  }
+}
+
+img {
+  box-shadow: 2px 5px 23px 1px rgba(0,0,0,0.75);
+-webkit-box-shadow: 2px 5px 23px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 5px 23px 1px rgba(0,0,0,0.75);
+}
+
+.country-card-item {
+  margin-bottom: 5px;
+}
+
+.language-list {
+  display: flex;
+  flex-direction: column;
+
+  li {
+    margin-left: 5px;
+  };
+
+  .country-name {
+    font-weight: bold;
+  }
+}
+
+.flag {
+  margin-left: 30px;
 }
